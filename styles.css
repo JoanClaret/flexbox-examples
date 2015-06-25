@@ -1,14 +1,28 @@
 body{
     background-color:#ccc;
     font-family:'Open Sans';
+    color:#333;
+    margin:0;
+    padding:0;
+}
+.wrap-content{
     max-width: 1200px;
     margin:0 auto;
     padding:20px;
-    color:#333;
 }
 
+header{
+    background:transparent url('header.jpg') center top no-repeat;
+    padding:90px 30px;
+    text-align:center;
+}
+header a{
+    color:#fff;
+}
+
+
 h1{
-    color:#19AFE6;
+    color:#fff;
     font-size:  50px;
     text-align: center;
 }

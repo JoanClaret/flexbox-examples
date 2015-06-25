@@ -9,179 +9,184 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <h1>Flexbox examples</h1>
-        <section>
-            <h2>Container properties:</h2>
-            <div class="flex-legend">
-                <ul>
-                    <li>display: flex; <span class="notes">flex | inline-flex</span> </li>
-                    <li>flex-wrap: wrap; <span class="notes">nowrap | wrap | wrap-reverse</span></li>
-                    <li>justify-content: center;    <span class="notes"> flex-start | flex-end | center | space-between | space-around </span></li>
-                    <li>align-items: flex-start;    <span class="notes"> auto | flex-start | flex-end | center | baseline | stretch <br><span>Defines how flex items are laid out along the cross-axis. You can think of it as the justify-content version for the cross-axis.</span></span></li>
-                    <li>align-content: stretch;  <span class="notes">flex-start | flex-end | center | space-between | space-around | stretch <br><span>Aligning a flex container's lines within it when there is extra space in the cross-axis.</span></span></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h2>Item properties:</h2>
-            <div class="flex-legend">
-                <ul>
-                    <li>flex:1 0 auto; <span class="notes">flex-grow  | flex-shrink | flex-basis <br>
-                    <span>Flex grow: dictates what amount of the available space inside the flex container the item should take up. <br>    
-                        Flex-shrink: determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row. <br>
-                        Flex-basis: specifies the initial size of the flex item, before any available space is distributed according to the flex factors.
-                        </span></span> 
-                    </li>
-                    <li>order: 0; <span class="notes">0 | 1 | 2 ...</span></li>
-                    <li>align-self: auto;   <span class="notes"> auto | flex-start | flex-end | center | baseline | stretch <br>
-                    <span>makes possible to override the align-items value for specific flex items.</span> </span></li>
-                </ul>
-            </div>
-        </section>
-        <section>
-            <h3>Example 1</h3>
-            <div class="flex-example">
-                <p>display: flex; </p>
-                <div class="flex-container example1">
-                    <div>flex: 1 0 auto;</div>
-                    <div>flex: 1 0 auto;</div>
-                    <div>flex: 1 0 auto;</div>
-                    <div>flex: 1 0 auto;</div>
+        <header>
+            <h1>Flexbox examples</h1>
+            <a href="https://github.com/JoanClaret/Flexbox-examples" title="View github repository">View github repository</a>
+        </header>
+        <div class="wrap-content">
+            <section>
+                <h2>Container properties:</h2>
+                <div class="flex-legend">
+                    <ul>
+                        <li>display: flex; <span class="notes">flex | inline-flex</span> </li>
+                        <li>flex-wrap: wrap; <span class="notes">nowrap | wrap | wrap-reverse</span></li>
+                        <li>justify-content: center;    <span class="notes"> flex-start | flex-end | center | space-between | space-around </span></li>
+                        <li>align-items: flex-start;    <span class="notes"> auto | flex-start | flex-end | center | baseline | stretch <br><span>Defines how flex items are laid out along the cross-axis. You can think of it as the justify-content version for the cross-axis.</span></span></li>
+                        <li>align-content: stretch;  <span class="notes">flex-start | flex-end | center | space-between | space-around | stretch <br><span>Aligning a flex container's lines within it when there is extra space in the cross-axis.</span></span></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 2</h3>
-            <div class="flex-example">
-                <p>display: flex;</p>
-                <div class="flex-container example2">
-                    <div class="flex1">flex: 0 0 50%;</div>
-                    <div>flex: 1 0 auto;</div>
-                    <div>flex: 1 0 auto;</div>
-                    <div>flex: 1 0 auto;</div>
+            </section>
+            <section>
+                <h2>Item properties:</h2>
+                <div class="flex-legend">
+                    <ul>
+                        <li>flex:1 0 auto; <span class="notes">flex-grow  | flex-shrink | flex-basis <br>
+                        <span>Flex grow: dictates what amount of the available space inside the flex container the item should take up. <br>    
+                            Flex-shrink: determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row. <br>
+                            Flex-basis: specifies the initial size of the flex item, before any available space is distributed according to the flex factors.
+                            </span></span> 
+                        </li>
+                        <li>order: 0; <span class="notes">0 | 1 | 2 ...</span></li>
+                        <li>align-self: auto;   <span class="notes"> auto | flex-start | flex-end | center | baseline | stretch <br>
+                        <span>makes possible to override the align-items value for specific flex items.</span> </span></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 3</h3>
-            <div class="flex-example">
-                <p> display: flex;<br>
-                    flex-wrap: wrap;</span>
-                </p>
-                <div class="flex-container example3">
-                    <div>flex: 1 1 20%;</div>
-                    <div>flex: 1 1 20%;</div>
-                    <div>flex: 1 1 20%;</div>
-                    <div>flex: 1 1 20%;</div>
-                    <div>flex: 1 1 20%;</div>
-                    <div>flex: 1 1 20%;</div>
-                    <div>flex: 1 1 20%;</div>
-                    <div>flex: 1 1 20%;</div>
+            </section>
+            <section>
+                <h3>Example 1</h3>
+                <div class="flex-example">
+                    <p>display: flex; </p>
+                    <div class="flex-container example1">
+                        <div>flex: 1 0 auto;</div>
+                        <div>flex: 1 0 auto;</div>
+                        <div>flex: 1 0 auto;</div>
+                        <div>flex: 1 0 auto;</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 4</h3>
-            <div class="flex-example">
-                <p> display: flex;<br>
-                    justify-content: center;</span>
-                </p>
-                <div class="flex-container example4">
-                    <div>flex: 0 0 auto;</div>
-                    <div>flex: 0 0 auto;</div>
-                    <div>flex: 0 0 auto;</div>
-                    <div>flex: 0 0 auto;</div>
+            </section>
+            <section>
+                <h3>Example 2</h3>
+                <div class="flex-example">
+                    <p>display: flex;</p>
+                    <div class="flex-container example2">
+                        <div class="flex1">flex: 0 0 50%;</div>
+                        <div>flex: 1 0 auto;</div>
+                        <div>flex: 1 0 auto;</div>
+                        <div>flex: 1 0 auto;</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 5</h3>
-            <div class="flex-example">
-                <p> display: flex;<br>
-                    justify-content: space-between;</span>
-                </p>
-                <div class="flex-container example5">
-                    <div>flex: 0 0 auto;</div>
-                    <div>flex: 0 0 auto;</div>
-                    <div>flex: 0 0 auto;</div>
-                    <div>flex: 0 0 auto;</div>
+            </section>
+            <section>
+                <h3>Example 3</h3>
+                <div class="flex-example">
+                    <p> display: flex;<br>
+                        flex-wrap: wrap;</span>
+                    </p>
+                    <div class="flex-container example3">
+                        <div>flex: 1 1 20%;</div>
+                        <div>flex: 1 1 20%;</div>
+                        <div>flex: 1 1 20%;</div>
+                        <div>flex: 1 1 20%;</div>
+                        <div>flex: 1 1 20%;</div>
+                        <div>flex: 1 1 20%;</div>
+                        <div>flex: 1 1 20%;</div>
+                        <div>flex: 1 1 20%;</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 6</h3>
-            <div class="flex-example">
-                <p> display: flex;<br>
-                    align-items: flex-start;</span>
-                </p>
-                <div class="flex-container example6">
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+            </section>
+            <section>
+                <h3>Example 4</h3>
+                <div class="flex-example">
+                    <p> display: flex;<br>
+                        justify-content: center;</span>
+                    </p>
+                    <div class="flex-container example4">
+                        <div>flex: 0 0 auto;</div>
+                        <div>flex: 0 0 auto;</div>
+                        <div>flex: 0 0 auto;</div>
+                        <div>flex: 0 0 auto;</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 7</h3>
-            <div class="flex-example">
-                <p> display: flex;<br>
-                    align-items: stretch;</span>
-                </p>
-                <div class="flex-container example7">
-                     <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+            </section>
+            <section>
+                <h3>Example 5</h3>
+                <div class="flex-example">
+                    <p> display: flex;<br>
+                        justify-content: space-between;</span>
+                    </p>
+                    <div class="flex-container example5">
+                        <div>flex: 0 0 auto;</div>
+                        <div>flex: 0 0 auto;</div>
+                        <div>flex: 0 0 auto;</div>
+                        <div>flex: 0 0 auto;</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 8</h3>
-            <div class="flex-example">
-                <p> display: flex;<br>
-                    flex-wrap: wrap;<br>
-                    align-items: stretch;<br>
-                    align-content: stretch;<br></span>
-                </p>
-                <div class="flex-container example8">
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                     <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+            </section>
+            <section>
+                <h3>Example 6</h3>
+                <div class="flex-example">
+                    <p> display: flex;<br>
+                        align-items: flex-start;</span>
+                    </p>
+                    <div class="flex-container example6">
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <h3>Example 9</h3>
-            <div class="flex-example">
-                <p> display: flex;<br>
-                    flex-wrap: wrap;<br>
-                    align-items: stretch;<br>
-                    align-content: stretch;<br></span>
-                </p>
-                <div class="flex-container example9">
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                     <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
-                    <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+            </section>
+            <section>
+                <h3>Example 7</h3>
+                <div class="flex-example">
+                    <p> display: flex;<br>
+                        align-items: stretch;</span>
+                    </p>
+                    <div class="flex-container example7">
+                         <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section>
+                <h3>Example 8</h3>
+                <div class="flex-example">
+                    <p> display: flex;<br>
+                        flex-wrap: wrap;<br>
+                        align-items: stretch;<br>
+                        align-content: stretch;<br></span>
+                    </p>
+                    <div class="flex-container example8">
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                         <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 0 auto;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h3>Example 9</h3>
+                <div class="flex-example">
+                    <p> display: flex;<br>
+                        flex-wrap: wrap;<br>
+                        align-items: stretch;<br>
+                        align-content: stretch;<br></span>
+                    </p>
+                    <div class="flex-container example9">
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                         <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br></span></div>
+                        <div>flex: 1 1 20%;<span class="notes"><br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;<br>&lt;br&gt;</span></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </body>
     <a href="https://github.com/joanclaret"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
 </html>
