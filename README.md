@@ -19,20 +19,21 @@ Changes main and cross axis
 How flex items are laid out along the cross axis 
 
 ### justify-content: center; (main axis)
-flex-start;     /* Pack flex items from the start */
-flex-end;       /* Pack items from the end */
-center;         /* Pack items around the center */ 
-space-between;  /* The first item at the start, the last at the end */
-space-around;   /* Items have equal space around them */
+
+* flex-start;     /* Pack flex items from the start */
+* flex-end;       /* Pack items from the end */
+* center;         /* Pack items around the center */ 
+* space-between;  /* The first item at the start, the last at the end */
+* space-around;   /* Items have equal space around them */
 How the browser distributes space between and around flex items along the main-axis of their container
 
-###  flex-basis: <width>;
+###  flex-basis: 'width';
 Specifies the initial size of a flex item
 
-###  flex-grow: <number>;
+###  flex-grow: 'number';
 Defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. It dictates what amount of the available space inside the flex container the item should take up.
 
-###  flex-shrink: <number>;
+###  flex-shrink: 'number';
 It specifies the "flex shrink factor", which determines how much the flex item will shrink relative to the rest of the flex items in the flex container when there isn't enough space on the row.
 
 ###  flex-wrap: nowrap;
